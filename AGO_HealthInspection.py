@@ -15,8 +15,8 @@ for key, value in dict.items():
 
     sd_fs_name = "{}".format(key)
     portal = "https://pearland.maps.arcgis.com"
-    user = "MapService_Admin"
-    password = "Sdesde81"
+    user = ""
+    password = ""
 
     shrOrg = True
     shrEveryone = True
