@@ -37,8 +37,8 @@ def AdminBoundaries():
 
         sd_fs_name = "{}".format(key)
         portal = "https://pearland.maps.arcgis.com"
-        user = "MapService_Admin"
-        password = "Sdesde81"
+        user = ""
+        password = ""
 
         shrOrg = True
         shrEveryone = True
@@ -90,8 +90,8 @@ def Planning():
     for key, value in dict.items():
         sd_fs_name = "{}".format(key)
         portal = "https://pearland.maps.arcgis.com"
-        user = "MapService_Admin"
-        password = "Sdesde81"
+        user = ""
+        password = ""
 
         shrOrg = True
         shrEveryone = True
@@ -136,8 +136,8 @@ def Drainage():
 
         sd_fs_name = "{}".format(key)
         portal = "https://pearland.maps.arcgis.com"
-        user = "MapService_Admin"
-        password = "Sdesde81"
+        user = ""
+        password = ""
 
         shrOrg = True
         shrEveryone = True
@@ -181,8 +181,8 @@ def ParksandRec():
 
         sd_fs_name = "{}".format(key)
         portal = "https://pearland.maps.arcgis.com"
-        user = "MapService_Admin"
-        password = "Sdesde81"
+        user = ""
+        password = ""
 
         shrOrg = True
         shrEveryone = True
@@ -225,8 +225,8 @@ def Schools():
 
         sd_fs_name = "{}".format(key)
         portal = "https://pearland.maps.arcgis.com"
-        user = "MapService_Admin"
-        password = "Sdesde81"
+        user = ""
+        password = ""
 
         shrOrg = True
         shrEveryone = True
@@ -284,8 +284,8 @@ def Utilities():
 
         sd_fs_name = "{}".format(key)
         portal = "https://pearland.maps.arcgis.com"
-        user = "MapService_Admin"
-        password = "Sdesde81"
+        user = ""
+        password = ""
 
         shrOrg = True
         shrEveryone = True
@@ -329,8 +329,8 @@ def CIP():
 
         sd_fs_name = "{}".format(key)
         portal = "https://pearland.maps.arcgis.com"
-        user = "MapService_Admin"
-        password = "Sdesde81"
+        user = ""
+        password = ""
 
         shrOrg = True
         shrEveryone = True
@@ -373,8 +373,8 @@ def VT():
             arcpy.management.CreateVectorTilePackage(m, updateMap, "EXISTING", "\\\\GISAPP\\Workspace\\Horizon\\ArcGISPro_Projects\\VectorTiles\\VTScheme.xml", "INDEXED")
 
             portal = "https://pearland.maps.arcgis.com"
-            user = "MapService_Admin"
-            password = "Sdesde81"
+            user = ""
+            password = ""
             arcpy.SignInToPortal(portal, user, password)
             gis = arcgis.GIS(portal, user, password)
 
