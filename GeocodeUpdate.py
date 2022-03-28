@@ -7,7 +7,7 @@ import time
 
 def main():
     RebuildLocators()
-    #AssetMgmt()
+    AssetMgmt()
     InteractiveMap()
 
 def RebuildLocators():
@@ -42,7 +42,7 @@ def AssetMgmt():
                 print("An error occurred")
                 print(arcpy.GetMessages(2))
 
-    gis = arcgis.GIS("https://gis.pearlandtx.gov/arcgis/", "portaladmin", "Horizon81")
+    gis = arcgis.GIS("https://gis.pearlandtx.gov/arcgis/", "", "")
     searchItem = gis.content.search(query="title: "+ "AM_Composite" + " AND owner: " + "portaladmin", item_type = "Geocode Service", sort_field='title', sort_order='asc')
     for item in searchItem:
         print(item["title"])
@@ -72,7 +72,7 @@ def InteractiveMap():
                 print("An error occurred")
                 print(arcpy.GetMessages(2))
 
-    gis = arcgis.GIS("https://gis.pearlandtx.gov/arcgis/", "portaladmin", "Horizon81")
+    gis = arcgis.GIS("https://gis.pearlandtx.gov/arcgis/", "", "")
     searchItem = gis.content.search(query="title: "+ "IM_Composite" + " AND owner: " + "portaladmin", item_type = "Geocode Service", sort_field='title', sort_order='asc')
     for item in searchItem:
         print(item["title"])
