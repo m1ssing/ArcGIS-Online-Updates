@@ -45,5 +45,4 @@ def SummarizeWithin():
         print(outLayer,"\n", outTable)
         arcpy.analysis.SummarizeWithin(gridLayer, value, outLayer, "ONLY_INTERSECTING", "UnitCount Sum", "NO_SHAPE_SUM", "", "station", "NO_MIN_MAJ", "NO_PERCENT", outTable)
 main()
-arcpy.analysis.SummarizeWithin(r"\\gisapp\Workspace\gis staff workspace\cschultz\FireDashboard.gdb\summarizeGrid", r"\\gisapp\Workspace\gis staff workspace\cschultz\FireDashboard.gdb\FireHouse_YTD_Incident", r"\\gisapp\Workspace\gis staff workspace\cschultz\FireDashboard.gdb\IncidentReport_YTD_SummarizeWithin", "ONLY_INTERSECTING", "UnitCount Sum", "ADD_SHAPE_SUM", '', "station", "NO_MIN_MAJ", "NO_PERCENT", r"\\gisapp\Workspace\gis staff workspace\cschultz\FireDashboard.gdb\IncidentReport_SummaryTable")
 print("--AGO Fire Performance.--")
