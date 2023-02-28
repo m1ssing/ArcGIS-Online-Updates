@@ -323,7 +323,7 @@ def stDev():
                 Ucur.updateRow(row)
 
 def Employee():
-    employeeDict = {"0020": "Marisa Vazquez", "0021": "Ed Kimberly", "0022": "Belinda Cowan", "0023": "Rance Rhame", "0024": "Carey Blair", "0025": "James Polanco", "0026": "Darlene Estrada", "STHA": "Stephanie Hauck"}
+    employeeDict = {}
     dashLayer = "\\\\GISAPP\\Workspace\\GIS Staff Workspace\\cschultz\\CodeEnforcement.gdb\\Dashboard_Violations"
     arcpy.management.AddField(dashLayer, "EmployeeName", "TEXT")
     fields = ["UserID", "EmployeeName"]
