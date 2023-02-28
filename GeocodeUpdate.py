@@ -51,7 +51,7 @@ def AssetMgmt():
     sdItem.share(everyone=True)
 
 def InteractiveMap():
-    arcpy.SignInToPortal("https://gis.pearlandtx.gov/arcgis/", "portaladmin", "Horizon81")
+    arcpy.SignInToPortal("https://gis.pearlandtx.gov/arcgis/", "user", "pass")
     locPath = "\\\\GISAPP\\Workspace\\MyArcGIS\\Geocoders\\IM_Composite.loc"
     sddraftFile = "\\\\GISAPP\\Workspace\\Horizon\\Scripts\\GeocodeUpdate.sddraft"
     sdFile = "\\\\GISAPP\\Workspace\\Horizon\\Scripts\\GeocodeUpdate.sd"
