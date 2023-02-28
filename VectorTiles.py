@@ -14,8 +14,8 @@ for m in prj.listMaps():
     updateMap = "\\\\GISAPP\\Workspace\\Horizon\\ArcGISPro_Projects\\VectorTiles\\" + m.name + ".vtpk"
     arcpy.management.CreateVectorTilePackage(m, updateMap, "EXISTING", "\\\\GISAPP\\Workspace\\Horizon\\ArcGISPro_Projects\\VectorTiles\\VTScheme.xml", "INDEXED")
     portal = "https://pearland.maps.arcgis.com"
-    user = "MapService_Admin"
-    password = "Sdesde81"
+    user = ""
+    password = ""
     arcpy.SignInToPortal(portal, user, password)
     gis = arcgis.GIS(portal, user, password)
 
